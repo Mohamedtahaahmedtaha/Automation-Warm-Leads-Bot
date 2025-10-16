@@ -1,14 +1,33 @@
-# Automation-Warm-Leads-Bot
-Developed a Python-based automation tool to interact with Google Sheets for managing and tracking warm leads efficiently. The project uses the gspread library with a Google Service Account to securely connect to a Google Sheet, read existing data, append new entries, and update specific cells programmatically.
+# Warm Lead Bot
 
-Key features include:
+Project Description
 
-Secure authentication: Integrated Google Service Account with proper scopes to access and modify Google Sheets.
+Warm Lead Bot is an intelligent assistant designed to help businesses identify genuine leads from public platforms. It automatically analyzes posts and messages to determine whether they represent potential customers actively looking for tech services, such as web development, mobile apps, UI/UX design, or automation solutions.
 
-Automated data logging: Append new rows with timestamps for tracking activities and lead status.
+The bot filters out posts that are irrelevant, such as users offering their own services, asking for academic help, or engaging in general discussions. By streamlining lead qualification, this tool saves time and improves the efficiency of sales and marketing teams.
 
-Data retrieval: Ability to read all rows and search for specific entries within the sheet.
+Features
 
-Update capability: Modify any cell programmatically to reflect status changes or corrections.
+Automatically classify posts as "warm leads" or "irrelevant".
 
-Real-world applicability: Streamlines the process of lead tracking and reporting, reducing manual errors and saving time for sales or operations teams.
+Supports multiple platforms (initially designed for public social and forum posts).
+
+Lightweight, easy to deploy, and can be run locally or on cloud environments.
+
+Simple integration with messaging systems or internal dashboards.
+
+Provides structured data output for CRM or further analysis.
+
+How It Works
+
+Input Collection: The bot receives a text post from a public platform.
+
+Text Analysis: The message is analyzed using NLP models to identify the intent and urgency.
+
+Lead Classification: Posts are classified as either:
+
+Warm Lead: Genuine interest in a tech service.
+
+Not a Lead: Offers services, asks for school help, or general discussion.
+
+Output: The result is logged and optionally sent to a dashboard or notification system.
